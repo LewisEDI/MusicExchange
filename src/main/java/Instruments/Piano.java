@@ -11,8 +11,8 @@ public class Piano extends Instrument implements IPlay, ITune, ISell {
     private double costPrice;
     private double sellPrice;
 
-    public Piano(String material, String typeOfInstrument, String colour, String pianoBrand, String pianoModel, boolean tuned, double costPrice, double sellPrice) {
-        super(material, typeOfInstrument, colour, tuned);
+    public Piano(String material, TypeOfInstrument typeOfInstrument, String colour, String pianoBrand, String pianoModel, boolean tuned, double costPrice, double sellPrice) {
+        super(material, typeOfInstrument.KEYS, colour, tuned);
         this.pianoBrand = pianoBrand;
         this.pianoModel = pianoModel;
         this.sellPrice = sellPrice;

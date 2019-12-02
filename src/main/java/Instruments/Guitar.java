@@ -14,8 +14,8 @@ public class Guitar extends Instrument implements ISell, IPlay, ITune {
     private String guitarModel;
 
 
-    public Guitar(String material, String typeOfInstrument, String colour, String handed, String typeOfGuitar, double costPrice, double sellPrice, String guitarBrand, String guitarModel, boolean tuned) {
-        super(material, typeOfInstrument, colour, tuned);
+    public Guitar(String material, TypeOfInstrument typeOfInstrument, String colour, String handed, String typeOfGuitar, double costPrice, double sellPrice, String guitarBrand, String guitarModel, boolean tuned) {
+        super(material, TypeOfInstrument.STRING, colour, tuned);
         this.costPrice = costPrice;
         this.sellPrice = sellPrice;
         this.handed = handed;

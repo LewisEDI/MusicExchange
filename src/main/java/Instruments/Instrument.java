@@ -5,11 +5,11 @@ import behaviours.ISell;
 public abstract class Instrument implements ISell {
 
     private String material;
-    private String typeOfInstrument;
+    private TypeOfInstrument typeOfInstrument;
     private String colour;
     public boolean tuned;
 
-    public Instrument(String material, String typeOfInstrument, String colour, boolean tuned){
+    public Instrument(String material, TypeOfInstrument typeOfInstrument, String colour, boolean tuned){
         this.material = material;
         this.typeOfInstrument = typeOfInstrument;
         this.colour = colour;
@@ -21,9 +21,6 @@ public abstract class Instrument implements ISell {
         return material;
     }
 
-    public String getType() {
-        return typeOfInstrument;
-    }
 
     public String getColour() {
         return colour;
@@ -33,8 +30,12 @@ public abstract class Instrument implements ISell {
         this.material = material;
     }
 
-    public void setType(String type) {
-        this.typeOfInstrument = type;
+    public TypeOfInstrument getTypeOfInstrument() {
+        return typeOfInstrument;
+    }
+
+    public void setTypeOfInstrument(TypeOfInstrument typeOfInstrument) {
+        this.typeOfInstrument = typeOfInstrument;
     }
 
     public void setColour(String colour) {

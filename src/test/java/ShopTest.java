@@ -16,8 +16,8 @@ public class ShopTest {
 
     @Before
     public void setup(){
-        guitarTuned = new Guitar("wood", "string", "red", "left", "electric", 100.00, 150.00, "fender", "strat", true);
-        guitarUntuned = new Guitar("wood", "string", "red", "left", "electric", 100.00, 150.00, "fender", "strat", false);
+        guitarTuned = new Guitar("wood", Instruments.TypeOfInstrument.STRING, "red", "left", "electric", 100.00, 150.00, "Fender", "Strat", true);
+        guitarUntuned = new Guitar("wood", Instruments.TypeOfInstrument.STRING, "red", "left", "electric", 100.00, 150.00, "Fender", "Strat", false);
         shop = new Shop();
     }
 

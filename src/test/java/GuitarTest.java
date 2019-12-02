@@ -1,4 +1,5 @@
 import Instruments.Guitar;
+import Instruments.TypeOfInstrument;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,11 +10,13 @@ public class GuitarTest {
     Guitar guitar;
     Guitar guitar2;
 
+
     @Before
     public void Setup(){
-        guitar = new Guitar("wood", "string", "red", "left", "electric", 100.00, 150.00, "fender", "strat", true);
-        guitar2 = new Guitar("wood", "string", "red", "left", "electric", 100.00, 150.00, "fender", "strat", false);
+        guitar = new Guitar("wood", Instruments.TypeOfInstrument.STRING, "red", "left", "electric", 100.00, 150.00, "Fender", "Strat", true);
+        guitar2 = new Guitar("wood", Instruments.TypeOfInstrument.STRING, "red", "left", "electric", 100.00, 150.00, "Fender", "Strat", false);
     }
+
 
     @Test
 
